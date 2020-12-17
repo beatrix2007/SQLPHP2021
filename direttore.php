@@ -1,7 +1,7 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 	<html>
 		<body>
-			<!-- <?php
+			<?php
 				$server="vecchia.beatrice.tave.osdb.it";
 				$user="c146_vecchia";
 				$password="Susanna1";
@@ -9,7 +9,7 @@
 				$connection2= new mysqli($server, $user, $password, $dbname);
 				if($connection2->connect_error){
 				die("Connessione fallita".$connection2->connect_error);
-				}
+				} 
 				
 			?>
 			<form action="direttore.php" method="get">
@@ -17,7 +17,7 @@
 					<legend>Direttore: </legend>
 					<label for="dipartimenti"> Scegli il dipartimento: </label>
 					<select name="dipartimenti">
-				<?php
+				<?php /*
 					$dipartimento = $conn->query("select *from dipartimenti");
 					while($row = $dipartimento -> fetch_assoc()) {
 						echo '<option value = "'.$row["codice"].'">'.$row["nome"].'-'.$row["città"]'</option>';
@@ -28,15 +28,16 @@
 					$impiegato = $conn->query("select matricola, cognome, dipartimento * from impiegati");
 					while($row1 = $impiegato -> fetch_assoc()) {
 						echo "<option value = '$row1[matricola]'>$row1[cognome]-$row1[dipartimento]</option>";
-					}
+					} */
 				?>
 					<input type="submit" value="Assegna">
 				</fieldset>		
 			</form>	
-			<?php
+			<?php /*
 				if (empty($_GET)){
-					echo "Inserisci i valori richiesti";
-			?> -->
+					echo "Inserisci i valori richiesti"; 
+					*/
+			?>
 			
 		</body>
 	</html>
